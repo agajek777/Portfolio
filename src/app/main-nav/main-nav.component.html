@@ -1,0 +1,36 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['']">Home</a>
+      <a mat-list-item [routerLink]="['about']">About</a>
+      <a mat-list-item [routerLink]="['projects']">Projects</a>
+      <a mat-list-item [routerLink]="['contact']">Contact</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="toolbar-top">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon style="color: white;" aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span style="margin-left: 1em; cursor: pointer; font-size: 1.5em; color: white;" [routerLink]="['']">Portfolio</span>
+      <span class="spacer"></span>
+      <ng-container *ngIf="!(isHandset$ | async)">
+        <a [routerLink]="['']">Home</a>
+        <a [routerLink]="['about']">About</a>
+        <a [routerLink]="['projects']">Projects</a>
+        <a [routerLink]="['contact']">Contact</a>
+      </ng-container>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
