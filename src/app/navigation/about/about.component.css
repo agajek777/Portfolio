@@ -93,3 +93,48 @@
     height: 45px;
   }
 }
+
+@media only screen and (min-width: 1850px) {
+  .about-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section {
+    width: 30vw;
+    margin-right: 2vw;
+    max-width: 500px;
+  }
+
+  .about-section h1 {
+    padding-top: 7vh;
+    padding-left: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .section-links {
+    display: block;
+    width: 350px;
+    padding-top: 5vh;
+    flex-grow: 0;
+    padding-left: 9vw;
+  }
+
+  .section-links p {
+    width: 10vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo {
+    height: 45px;
+  }
+}

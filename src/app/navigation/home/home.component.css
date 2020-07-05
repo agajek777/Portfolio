@@ -44,7 +44,7 @@ main {
   letter-spacing: 0.15em;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
-  background: linear-gradient(to right, #ff8902 0%, #6739a0 100%);
+  background: linear-gradient(to right, #ff8902 0%, #c229ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1;
