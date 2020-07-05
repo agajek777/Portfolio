@@ -1,0 +1,95 @@
+* {
+  background-color: #19346b;
+}
+
+.about-section {
+  color: white;
+  background-color: #19346b;
+  width: 100%;
+}
+
+.about-section h1 {
+  padding-top: 2.5vh;
+  padding-left: 4vw;
+}
+
+.about-text {
+  margin: 0 3vw;
+  padding: 3vh 3vw 3vw 0;
+  background-color: #19346b;
+}
+
+.about-section a {
+  text-decoration: underline;
+  color: rgb(13, 255, 203);
+  cursor: pointer;
+}
+
+.links {
+  widows: 100%;
+  padding-left: 4vw;
+}
+
+.section-links {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-text {
+    margin: 0 3vw;
+    padding: 3vh 3vw 3vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .section {
+    width: 30vw;
+    margin: 0.5vw auto;
+  }
+
+  .about-section h1 {
+    padding-top: 2.5vh;
+    padding-left: 11vw;
+  }
+
+  .links {
+    padding-left: 9vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-text {
+    margin: 0 3vw;
+    padding: 3vh 3vw 3vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .section {
+    width: 30vw;
+    flex-grow: 10;
+    margin-right: 2vw;
+    max-width: 500px;
+  }
+
+  .about-section h1 {
+    padding-top: 7vh;
+    padding-left: 3.2vw;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .section-links {
+    display: block;
+    padding-top: 5vh;
+    flex-grow: 20;
+  }
+
+  .logo {
+    height: 45px;
+  }
+}

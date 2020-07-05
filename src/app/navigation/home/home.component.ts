@@ -18,7 +18,9 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  scrollTop() {
-    window.scrollTo(0,0);
+  scrollTop(el: HTMLElement) {
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 }

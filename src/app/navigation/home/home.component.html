@@ -1,7 +1,7 @@
 <main #top>
   <div class="landing-page">
     <div class="title">
-      <h1 style="margin-bottom: 0; font-size: 4vw; min-height: 4vw; margin-top: 10px;">Hello, I'm Adam Gajek</h1>
+      <h1 style="margin-bottom: 0; font-size: 4.5vw; min-height: 4vw; margin-top: 10px;">Hello, I'm Adam Gajek</h1>
     </div>
     <div class="lower-title">{{ '{ Web-Developer }' }}</div>
     <i class="material-icons expand-button" style="color: white;" (click)="scroll(info)">expand_more</i>
@@ -13,13 +13,14 @@
       </div>
       <div class="description">
         <h2>Hello 👋</h2>
-        <p style="font-size: 1.5vw;">I'm Adam, a coffee lover ☕, 21-year-old full-stack web developer 💻 with a educational background in Computer Science.
+        <br>
+        <p>I'm Adam, a coffee lover ☕, 21-year-old full-stack web developer 💻 with a educational background in Computer Science.
           I am currently working as a <strong>Junior C++ Developer for Accenture</strong>, but in my free time I'm learning about web-programming.
           I started programming back in the 2017. I am a <strong>C#</strong> enthusiast and extremely passionate about coding. I love to learn new things every day and keep up
           with the new technologies. Last but not least, I think it's pretty rare in IT but I'm also a <strong>ballroom dancer</strong> 🕺. It's been my passion for 13 years and I love to practice new steps.
           You can find more about me <a [routerLink]="['/about']" style="text-decoration: none; color: #21e6c1;" routerLinkActive="router-link-active" >here</a>.</p>
       </div>
-      <i class="material-icons expand-button" style="color: white;" (click)="scrollTop()">expand_less</i>
+      <i class="material-icons expand-button" style="color: white;" (click)="scrollTop(top)">expand_less</i>
     </div>
   </div>
 </main>
