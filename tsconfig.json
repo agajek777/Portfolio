@@ -1,4 +1,5 @@
 {
+  "noImplicitAny": false,
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",

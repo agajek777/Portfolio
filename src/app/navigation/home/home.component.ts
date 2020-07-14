@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Inject, HostListener, AfterViewInit } from '@angular/core';
+import AOS from "aos";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    console.log(AOS);
+  }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
   scroll(element: HTMLElement) {

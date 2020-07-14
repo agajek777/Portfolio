@@ -15,6 +15,7 @@ import { HomeComponent } from './navigation/home/home.component';
 import { AboutComponent } from './navigation/about/about.component';
 import { ProjectsComponent } from './navigation/projects/projects.component';
 import { ContactComponent } from './navigation/contact/contact.component';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContactComponent } from './navigation/contact/contact.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
